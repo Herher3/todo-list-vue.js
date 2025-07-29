@@ -68,3 +68,21 @@ li button {
 li button:hover {
   background-color: #c82333;
 }
+
+.edit-btn {
+  background-color: orange;
+  color: white;
+  margin-left: 5px;
+}
+
+.save-btn {
+  background-color: green;
+  color: white;
+  margin-left: 5px;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  margin-left: 5px;
+}
