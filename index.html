@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List Vue.js</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h2>To-Do List</h2>
+      <input v-model="tugasBaru" placeholder="Masukkan tugas..." />
+      <button @click="tambahTugas">Tambah</button>
+
+      <ul>
+        <li v-for="(tugas, index) in daftarTugas" :key="index">
+          {{ tugas }}
+          <button @click="hapusTugas(index)">Hapus</button>
+        </li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
